@@ -1,6 +1,6 @@
-// Mobile menu toggle, scroll reveal, footer year.
+// Mobile menu toggle.
 (function () {
-    var button = document.querySelector(".menu-button");
+    var button = document.querySelector(".menu-btn");
     var nav = document.getElementById("site-nav");
 
     if (button && nav) {
@@ -14,25 +14,5 @@
                 button.setAttribute("aria-expanded", "false");
             }
         });
-    }
-
-    var revealItems = document.querySelectorAll(".reveal");
-    if ("IntersectionObserver" in window) {
-        var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        revealItems.forEach(function (item) { observer.observe(item); });
-    } else {
-        revealItems.forEach(function (item) { item.classList.add("visible"); });
-    }
-
-    var year = document.getElementById("year");
-    if (year) {
-        year.textContent = String(new Date().getFullYear());
     }
 })();
