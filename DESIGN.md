@@ -1,4 +1,4 @@
-# DESIGN.md — Sofyan Eka Febriyanto portfolio
+# DESIGN.md: Sofyan Eka Febriyanto portfolio
 
 ## World
 
@@ -72,6 +72,24 @@ heading, no gradient text.
   locally 21 Nov 2026 with its own fonts.
 - `fonts/*.woff2`: IBM Plex Sans and JetBrains Mono, latin subsets,
   downloaded from Google Fonts (SIL OFL).
+
+## Dials
+
+Reading this as: a personal portfolio for a developer and gold trader, in a gold-ledger visual language, dial ENERGY 2 / RHYTHM 2 / MOTION 2.
+
+- ENERGY 2: the page says hello with a display name and a moving ticker, then gets out of the way.
+- RHYTHM 2: sections vary (hero grid, featured image, ledger rows, hairline stack lines, one bold contact line) without becoming asymmetric for its own sake.
+- MOTION 2: one ambient motion (the ticker) plus hover and press feedback. No scroll-reveal, no parallax, no endless pulses.
+
+## Apple polish (21 Nov 2026)
+
+- Translucent header: the sticky header is a material (blur 20px, saturate 180%, 0.72 opacity) so content scrolls under it instead of disappearing behind an opaque bar. Reduced-transparency users get a solid header.
+- Press feedback: the primary button scales to 0.97 on pointer-down (100ms), so the press answers instantly instead of waiting for release.
+- Row hover: ledger rows warm to a surface tint on hover, so the list answers the pointer the way a table cell does.
+- Scroll-spy: the nav marks the section in view with gold, so the page always answers where you are.
+- Portrait depth: the portrait carries a neutral offset shadow (no gold glow), so it sits above the page instead of floating in it.
+- Menu animation: the mobile menu drops from its trigger (top right, 200ms exponential ease-out) and returns the same way, instead of appearing and disappearing.
+- Type: optical sizing on, tabular numerals on data (hallmark, meta, footer mark).
 
 ## Judged detector findings (21 Nov 2026)
 
