@@ -140,18 +140,14 @@ section { padding: 88px 0; }
 .button.primary:hover { color: #161b22; background: var(--gold-dim); border-color: var(--gold-dim); }
 
 .hero-photo { flex-shrink: 0; }
-.monogram {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero-photo img {
+    display: block;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 2px solid var(--gold);
-    color: var(--gold);
-    font-size: 64px;
-    font-weight: 700;
-    letter-spacing: -0.03em;
+    object-fit: cover;
+    object-position: center 20%;
 }
 
 /* Work */
@@ -277,7 +273,7 @@ section { padding: 88px 0; }
     .hero { padding: 72px 0 64px; }
     .hero-inner { flex-direction: column-reverse; align-items: flex-start; gap: 32px; }
     .hero h1 { font-size: 40px; }
-    .hero-photo .monogram { width: 120px; height: 120px; font-size: 52px; }
+    .hero-photo img { width: 120px; height: 120px; }
     .project-list { grid-template-columns: 1fr; }
     .about-inner { grid-template-columns: 1fr; gap: 32px; }
     .stack-groups { grid-template-columns: 1fr; }
